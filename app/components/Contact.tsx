@@ -14,7 +14,7 @@ export default function Contact() {
   // TODO: change [p, button] tags and insert handleSubmit after purchasing a domain
   return (
     <form id="contact" className="space-x-[2%] w-full">
-      <h2 className="text-2xl p-4 font-semibold my-4">
+      <h2 className="text-2xl p-2 font-semibold my-4">
         If you want to send me a message
       </h2>
       <div className="inline-block w-[48%] mb-4">
