@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollTopButton from "./components/ScrollTopButton";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <div className="container mx-auto max-w-3xl">
           <NavBar />
           {children}
+          <Toaster position="top-center" />
           <Footer />
           <ScrollTopButton />
         </div>

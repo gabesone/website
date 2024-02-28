@@ -6,7 +6,6 @@ import Link from "next/link";
 import { Suspense } from "react";
 import Contact from "./components/Contact";
 import { LoadingProjects } from "./components/LoadingSkeleton";
-import Email from "./emails";
 
 export default function Home() {
   return (
@@ -44,12 +43,11 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="space-y-16 mt-32">
+        <div className="space-y-16 mt-32 w-full">
           <Suspense fallback={<LoadingProjects />}>
             <Projects />
           </Suspense>
           <Contact />
-          <Email />
         </div>
       </div>
     </main>
